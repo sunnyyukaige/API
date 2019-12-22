@@ -53,3 +53,11 @@ class Work_log(db.Model):
 
     __tablename__ = 't_work_log'
 
+    def __init__(self, operation_type,operation_name,operation_no,patient_id,remarks,date_time):
+        self.operation_name = operation_name
+        self.operation_type = operation_type
+        self.operation_no = operation_no
+        self.patient_id = patient_id
+        self.remarks = remarks
+        self.date_time = date_time
+
